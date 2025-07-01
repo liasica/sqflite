@@ -76,9 +76,12 @@ public class Utils {
      * should be impacted.
      *
      * @param localeString text such as fr-FR or fr
-     * @return
+     * @return Locale
      */
     static Locale localeForLanguageTagPre21(String localeString) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            return Locale.forLanguageTag(localeString);
+        }
         //Locale.Builder builder = new Locale().Builder();
         String[] parts = localeString.split("-");
         String language = "";
