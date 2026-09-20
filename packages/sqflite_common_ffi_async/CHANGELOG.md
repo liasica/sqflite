@@ -1,3 +1,7 @@
+## 1.0.3
+
+* Fix `sqflite-common-ffi-async-factory` agent skill: correct the `SqfliteDatabaseFactoryLogger` class name
+
 ## 1.0.2
 
 * Add `sqflite-common-ffi-async-factory` agent skill in `skills/`, installable with `dart run skills@ get`
