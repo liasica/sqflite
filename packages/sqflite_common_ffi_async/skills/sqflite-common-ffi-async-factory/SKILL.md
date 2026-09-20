@@ -68,7 +68,7 @@ Future<void> main() async {
   paths in applications.
 * Limitations (from the package README and source):
   * `singleInstance` is ignored: `sqlite_async` manages opening/closing.
-  * No logger support (`SqfliteLoggerDatabaseFactory` wrappers are not
+  * No logger support (`SqfliteDatabaseFactoryLogger` wrappers are not
     wired in).
   * `queryCursor` / `rawQueryCursor` load the whole result set, no paging.
   * io only (`platforms: linux, macos, windows, android, ios`); no web.
